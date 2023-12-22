@@ -2,7 +2,7 @@ FROM golang:1.19.4-alpine3.17 AS builder
 
 WORKDIR /build
 # Copy and download dependencies using go mod
-COPY go.mod .
+COPY go.mod . m
 COPY go.sum .
 RUN go mod download
 
